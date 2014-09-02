@@ -62,9 +62,7 @@ class SC_Mdl_Coincheck_Models_Module
 
     /**
      * dtb_module に Coincheck のエントリを挿入する
-     *
      * 初期化用。インストール時に実行する
-     * @return boolean テーブルを更新したときは true
      */
     public static function insert()
     {
@@ -93,6 +91,9 @@ class SC_Mdl_Coincheck_Models_Module
         return true;
     }
 
+    /*
+     * ランダムな文字列を生成
+     */
     private static function generateRandomString($length = 10)
     {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -103,7 +104,9 @@ class SC_Mdl_Coincheck_Models_Module
         return $randomString;
     }
 
-    # 必要なファイルをEC-CUBE内にコピーする
+    /*
+     * 必要なファイルをEC-CUBE内にコピーする
+     */
     public static function copyFiles()
     {
         $arrUpdateFiles = array(
@@ -136,6 +139,9 @@ class SC_Mdl_Coincheck_Models_Module
         }
     }
 
+    /*
+     * 注文状況でビットコイン用のものを追加する
+     */
     public static function insertOrderStatus()
     {
         $masterData = new SC_DB_MasterData_Ex();

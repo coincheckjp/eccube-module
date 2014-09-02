@@ -79,7 +79,7 @@ class LC_Page_Mdl_Coincheck_Config extends LC_Page_Admin_Ex
     }
 
     /**
-     * dtb_payment に coincheck モジュールによるクレジットカード決済がない場合は追加する
+     * dtb_payment に coincheck モジュールによるビットコイン決済がない場合は追加する
      *
      * @return boolean 実行した場合は true
      */
@@ -133,7 +133,6 @@ class LC_Page_Mdl_Coincheck_Config extends LC_Page_Admin_Ex
     /* パラメーター情報の初期化 */
     private function initFormParam($objFormParam)
     {
-        // 仕様変更に備えて十分大きい値にしておく
         $max_length = 256;
         $objFormParam->addParam('アクセスキー', 'access_key', $max_length, 'a', array('EXIST_CHECK', 'MAX_LENGTH_CHECK', 'GRAPH_CHECK'));
         $objFormParam->addParam('シークレットアクセスキー', 'access_secret', $max_length, 'a', array('EXIST_CHECK', 'MAX_LENGTH_CHECK', 'GRAPH_CHECK'));

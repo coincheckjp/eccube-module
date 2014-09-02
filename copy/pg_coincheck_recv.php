@@ -1,6 +1,8 @@
 <?php
-/*
- * Copyright(c) 2014 ResuPress, Inc. All rights reserved.
+/**
+ * This file is part of EC-CUBE coincheck module
+ *
+ * @copyright 2014 coincheck All Rights Reserved.
  */
 require_once('../require.php');
 require_once(MODULE_REALDIR . 'mdl_coincheck/inc/include.php');
