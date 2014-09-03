@@ -7,7 +7,6 @@
 
 // {{{ requires
 require_once CLASS_EX_REALDIR . 'page_extends/LC_Page_Ex.php';
-require_once(MODULE_REALDIR . 'mdl_pg_mulpay/inc/include.php');
 require_once(MDL_COINCHECK_CLASS_REALDIR . 'models/SC_Mdl_Coincheck_Models_Module.php');
 
 /**
@@ -16,10 +15,7 @@ require_once(MDL_COINCHECK_CLASS_REALDIR . 'models/SC_Mdl_Coincheck_Models_Modul
  */
 class LC_Page_Mdl_Coincheck_Recv extends LC_Page_Ex {
 
-    var $objMdl;
-    var $arrSetting;
-
-    function LC_Page_Mdl_PG_MULPAY_Recv() {
+    function LC_Page_Mdl_Coincheck_Recv() {
     }
 
     // }}}
