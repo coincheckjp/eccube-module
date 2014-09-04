@@ -129,6 +129,7 @@ class LC_Page_Mdl_Coincheck_Payment extends LC_Page_Ex
         $strCallbackUrl = HTTPS_URL . USER_DIR . "pg_coincheck_recv.php?recv_secret=" . $arrModuleSetting["recv_secret"];
         $arrQuery = array("button" => array(
             "name" => ("注文 #" . $arrOrder["order_id"]),
+            "email" => $arrOrder["order_email"],
             "currency" => "JPY",
             "amount" => $arrOrder["payment_total"],
             "callback_url" => $strCallbackUrl,
