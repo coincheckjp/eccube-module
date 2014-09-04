@@ -126,7 +126,7 @@ class LC_Page_Mdl_Coincheck_Payment extends LC_Page_Ex
     {
         $strUrl = MDL_COINCHECK_API_BASE . '/ec/buttons';
         $intNonce = time();
-        $strCallbackUrl = HTTPS_URL . USER_DIR . "pg_coincheck_recv.php?recv_secret=" . $arrModuleSetting["recv_secret"];
+        $strCallbackUrl = HTTPS_URL . USER_DIR . "pg_coincheck_recv.php?recv_secret=" . $arrModuleSetting["recv_secret"] . "&order_id=" . $arrOrder["order_id"];
         $arrQuery = array("button" => array(
             "name" => ("注文 #" . $arrOrder["order_id"]),
             "email" => $arrOrder["order_email"],
