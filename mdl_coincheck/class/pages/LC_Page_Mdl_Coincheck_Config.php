@@ -48,7 +48,6 @@ class LC_Page_Mdl_Coincheck_Config extends LC_Page_Admin_Ex
     public function action()
     {
         $this->initPaymentMethod();
-        SC_Mdl_Coincheck_Models_Module::insert();
         $arrSetting = SC_Mdl_Coincheck_Models_Module::loadCurrentSetting(true);
 
         $objFormParam = new SC_FormParam_Ex();

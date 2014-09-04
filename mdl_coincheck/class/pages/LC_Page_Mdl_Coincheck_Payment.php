@@ -6,7 +6,6 @@
  */
 
 require_once(CLASS_EX_REALDIR . "page_extends/LC_Page_Ex.php");
-require_once(MDL_COINCHECK_CLASS_REALDIR . 'models/SC_Mdl_Coincheck_Models_Customer.php');
 require_once(MDL_COINCHECK_CLASS_REALDIR . 'models/SC_Mdl_Coincheck_Models_Module.php');
 
 /**
