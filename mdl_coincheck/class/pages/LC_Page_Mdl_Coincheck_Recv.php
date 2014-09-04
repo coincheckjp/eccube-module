@@ -66,11 +66,11 @@ class LC_Page_Mdl_Coincheck_Recv extends LC_Page_Ex {
                 $masterData = new SC_DB_MasterData_Ex();
                 $arrOrderStatuses =  $masterData->getMasterData("mtb_order_status");
                 $intReceiveBitcoinStatus = array_search(MDL_COINCHECK_ORDER_STATUS_CONFIRMING, $arrOrderStatuses);
-                $objQuery->update("dtb_order", array("status" => $intReceiveBitcoinStatus), array("order_id" => $strOrderId));
+                $objQuery->update("dtb_order", array("status" => $intReceiveBitcoinStatus), "order_id = ?", array($strOrderId));
                 break;
             case "confirmed":
                 $objQuery = SC_Query::getSingletonInstance();
-                $objQuery->update("dtb_order", array("status" => ORDER_PRE_END), array("order_id" => $strOrderId));
+                $objQuery->update("dtb_order", array("status" => ORDER_PRE_END), "order_id = ?", array($strOrderId));
                 $objPurchase = new SC_Helper_Purchase_Ex();
                 $objPurchase->sendOrderMail($strOrderId);
                 break;

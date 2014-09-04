@@ -155,7 +155,9 @@ class SC_Mdl_Coincheck_Models_Module
                 $id => MDL_COINCHECK_ORDER_STATUS_CONFIRMING
             );
             $masterData->registMasterData("mtb_order_status", array("id", "name", "rank"), $statusVal);
+            $masterData->createCache("mtb_order_status");
             $masterData->registMasterData("mtb_customer_order_status", array("id", "name", "rank"), $statusVal);
+            $masterData->createCache("mtb_customer_order_status");
         }
     }
 }
