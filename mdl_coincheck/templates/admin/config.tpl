@@ -11,7 +11,7 @@
     <input type="hidden" name="mode" value="register" />
     <div class="contents-main">
         <h2>coincheck アクセスキー設定</h2>
-        <p style="margin: 30px 0; font-weight: bold; line-height: 25px;"><a href="https://coincheck.jp/api_settings" target="_blank">coincheck APIキー設定画面</a>から新たにAPIキーを作成し、「アクセスキー」、「シークレットアクセスキー」を入力して下さい。<br />コールバック用シークレットアクセスキーは変更せず、そのままにして下さい。</p>
+        <p style="margin: 30px 0; font-weight: bold; line-height: 25px;"><a href="https://coincheck.jp/api_settings" target="_blank">coincheck APIキー設定画面</a>から新たにAPIキーを作成し、「アクセスキー」、「シークレットアクセスキー」を入力して下さい。<br />コールバック用シークレットアクセスキーは変更せず、そのままにして下さい。<br />設定後は、左上の「基本情報管理」メニューから「配送方法設定」→ 「編集」と進み、「取扱支払方法」で「ビットコイン決済」をONにして下さい。<br />詳細は<a href="https://coincheck.jp/documents/eccube" target="_blank">EC-CUBEにビットコイン決済を導入する方法</a>を参照して下さい。</p>
         <table class="form">
             <col width="20%" />
             <col width="80%" />
