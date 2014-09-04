@@ -47,7 +47,7 @@ class LC_Page_Mdl_Coincheck_Install extends LC_Page_Ex {
      * @return void
      */
     function action() {
-      $this->nextUrl = ROOT_URLPATH . 'admin/load_module_config.php?module_id=' . MDL_COINCHECK_ID;
+      $this->nextUrl = ROOT_URLPATH . ADMIN_DIR . 'load_module_config.php?module_id=' . MDL_COINCHECK_ID;
       SC_Mdl_Coincheck_Models_Module::insert();
     }
 
