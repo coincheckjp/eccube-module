@@ -51,14 +51,5 @@ class LC_Page_Mdl_Coincheck_Install extends LC_Page_Ex {
       SC_Mdl_Coincheck_Models_Module::insert();
     }
 
-    /**
-     * デストラクタ.
-     *
-     * @return void
-     */
-    function destroy() {
-        parent::destroy();
-    }
-
 }
 

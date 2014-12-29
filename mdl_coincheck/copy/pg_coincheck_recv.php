@@ -11,6 +11,5 @@ require_once(MDL_COINCHECK_CLASS_REALDIR . "pages/LC_Page_Mdl_Coincheck_Recv.php
 // generate page
 
 $objPage = new LC_Page_Mdl_Coincheck_Recv();
-register_shutdown_function(array($objPage, "destroy"));
 $objPage->init();
 $objPage->process();

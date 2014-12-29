@@ -79,13 +79,4 @@ class LC_Page_Mdl_Coincheck_Recv extends LC_Page_Ex {
         SC_Response_Ex::actionExit();
     }
 
-    /**
-     * デストラクタ.
-     *
-     * @return void
-     */
-    function destroy() {
-        parent::destroy();
-    }
-
 }
