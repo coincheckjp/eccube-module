@@ -100,6 +100,8 @@ class LC_Page_Mdl_Coincheck_Config extends LC_Page_Admin_Ex
             'module_path' => MDL_COINCHECK_REALDIR . 'payment.php',
             'memo03' => MDL_COINCHECK_CODE,
             'del_flg' => 1, // デフォルトでは無効状態
+            'creator_id' => $_SESSION['member_id'],
+            'update_date' => 'CURRENT_TIMESTAMP',   // 2.12 対応
         );
         $objPayment = new SC_Helper_Payment_Ex();
         $objPayment->save($arrVal);
